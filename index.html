@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js">
+    </script>
+</head>
+
+    <!--this is gonna be the header and navigation, gonna be dead simple-->
+    <body>
+        <body class="bg">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Home</h1>
+        </header>
+
+        <!--introductory text/welcome-->
+    <section class="intro">
+        <div>
+            Welcome to my first site, I crafted this amazing site from the ground up so be nice. 
+        </div>
+    </section>
+    
+    <!-- simple explanation of what the site is for-->
+    <section>
+        <div class = "subhead">
+            So I'm using this site for practice and to display content I have personally made along with some
+            stuff I think is cool just to pad out the site and fill in empty spaces.
+        </div>
+    </section>
+
+        <!-- here is just some flash embeds for practice-->
+        <section class="main">
+            <figure>
+            <object width="320" height="260">
+                <param name="musicplayer" value="vip.swf">
+                <embed src="pics/vip.swf" width="320" height="260">
+                </embed>
+                </object>
+                <figcaption>a selection of video game music</figcaption>
+                </figure>
+
+                      <!-- makes the god damn marquee toggle-->      
+                 <button onclick="togglediv('marquee')"> <img src = "pics/Fringe_Weaver.png" height="50" width="50"> </button>
+                                                
+
+                <script>
+                    function togglediv(id) {
+                    var div = document.getElementById(id);
+                    div.style.visibility = div.style.visibility == "visible" ? "hidden" : "visible";
+                    }
+                </script>
+                    
+
+                    
+                    <!-- the VALHA11A streamer chan reference-->
+                    <div id="marquee">
+                    <marquee behavior="scroll" direction="left" scrollamount="9">did i miss bath time?</marquee>
+                    <marquee behavior="scroll" direction="left" scrollamount="14">Who dangeru/ here?</marquee>
+                    <marquee behavior="scroll" direction="left" scrollamount="20">i miss short haired streaming-chan</marquee>
+                    <marquee behavior="scroll" direction="left" scrollamount="50">how do i premium</marquee>
+                    <marquee behavior="scroll" direction="left" scrollamount="7">(´・ω・)</marquee>
+                    <marquee behavior="scroll" direction="left" scrollamount="10">why is everyone so noisy?</marquee>
+                    <marquee behavior="scroll" direction="left" scrollamount="23">hey kids! wanna die?</marquee>
+                    <marquee behavior="scroll" direction="left" scrollamount="52">MOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOON</marquee>
+                    <marquee behavior="scroll" direction="left" scrollamount="8">What's happening?</marquee>
+                    <marquee behavior="scroll" direction="left" scrollamount="16">How do i denko?</marquee>
+                    <marquee behavior="scroll" direction="left" scrollamount="26">How do you do fellow youngesters?</marquee>
+                    <marquee behavior="scroll" direction="left" scrollamount="57">Anime was a mistake</marquee>
+                    <marquee behavior="scroll" direction="left" scrollamount="46">Anyone going to the Kira *Miki* encore concert?</marquee>
+                    </div>
+
+                    <!-- an RSS for my PSN account, was trying for weather kind of stuff but i lack the skill to make a decent ticker board style thing without shit premade stuff-->
+                    <div class="card">
+                    <a href="https://psnprofiles.com/o321khan"><img src="https://card.psnprofiles.com/1/o321khan.png" border="0"></a>
+                    <figcaption>My PSN Trophies if your interested in my failings</figcaption>
+                    </div>
+
+                </section>
+
+                   <!--this is the footer, don't have important stuff to say here right now so a shitty joke will do-->
+                    <footer>
+                    <div>
+                    sorry, there's no feet in this footer you weirdo.
+                    </div>
+                    </footer> 
+            </body>
+    </body>
+</html>
