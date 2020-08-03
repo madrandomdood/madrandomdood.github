@@ -134,8 +134,9 @@ header {
     @media screen and (max-width:1200px) {
         div.card {
             margin-left: 0;
-            bottom:0vh;
+            bottom:8vh;
             position: relative;
+            transform:scale(0.8)
         }
         button{ 
             border:0; 
