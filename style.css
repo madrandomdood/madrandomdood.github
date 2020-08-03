@@ -6,6 +6,7 @@ body {
     margin: 0px;
     padding: 0px;
     position: relative;
+    width:100vw;
 }
 
 /*this is the background to the main page*/
@@ -30,7 +31,7 @@ header {
 
     section {
    
-        color: rgb(158, 157, 157);
+        color: whitesmoke;
         padding: 20px;
         
     }
@@ -78,10 +79,10 @@ header {
         #marquee {
         color: white;
         font-family: 'Lucida Console';
-        position: absolute;
-        bottom: 100px;
-        margin:0;   
-        width:100;
+        position: relative;
+        bottom: 70px;
+        margin:0px;         
+        width:100%;
         z-index: -1;
         visibility: hidden;
      }
@@ -93,8 +94,8 @@ header {
             outline:0; 
             background:transparent;
             position: absolute;
-            bottom:34vh;
-            margin-left: 83%;
+            bottom:32vh;
+            margin-left: 65%;
         }
 
 
@@ -124,19 +125,24 @@ header {
 
     /*the positioning of the PSN card RSS*/
     div.card {
-        margin-left: 63%;
-        bottom:22vh;
+        margin-left: 65%;
+        bottom:20vh;
         position: absolute;
                
+    }
+
+    iframe.dreamy {
+    position: absolute;
+
     }
 
     /*responsive for mobile hopefully*/
     @media screen and (max-width:1200px) {
         div.card {
-            margin-left: 0;
-            bottom:8vh;
+            margin-left: 0px;
+            bottom:0vh;
             position: relative;
-            transform:scale(0.8)
+            
         }
         button{ 
             border:0; 
@@ -144,19 +150,15 @@ header {
             outline:0; 
             background:transparent;
             position: relative;
-            bottom:-3vh;
+            bottom:-70vh;
             margin-left: 20%;
         }
-    }
 
-    @media screen and (max-width:1190px) {
-
-        iframe {
-            height: 300px;
-            width: 300px; 
+        section.intro{
+            font-size: 100%;
         }
-
     }
+
 
     /* controls the media grid*/
     section.layout{
@@ -226,6 +228,4 @@ header {
                 transform: scale(1);
             }
         }
-      
-      
       
