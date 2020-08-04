@@ -29,6 +29,13 @@ header {
     padding: 20px 40px 10px 50px;
     }
 
+    img.cockroach{
+        position: absolute;
+        left:70%;
+        top:1%;
+        
+    }
+
     section {
    
         color: whitesmoke;
@@ -204,8 +211,16 @@ header {
       }
       #lb-img img {
         transform: scale(3);
-                
+
       }
+
+        @media screen and (max-height:920px){
+            #lb-img img{
+    
+                transform: scale(2);
+            }
+        }
+                
       @media screen and (max-width:800px){
         #lb-img img{
 
@@ -225,8 +240,14 @@ header {
             right:10vw;
             bottom:-14vh;
         }
+    }
 
-      }
+      @media screen and (max-height:610px){
+        #lb-img img{
+
+            transform: scale(1);
+        }
+    }
 
       @media screen and (max-width:550px){
         #lb-img img{
@@ -235,18 +256,6 @@ header {
         }      
     }
         
-        @media screen and (max-height:920px){
-            #lb-img img{
-    
-                transform: scale(2);
-            }
-        }
-        @media screen and (max-height:610px){
-            #lb-img img{
-    
-                transform: scale(1);
-            }
-        }
             @media screen and (max-width:430px){
                 #lb-img img{
                     transform: scale(1.7);
